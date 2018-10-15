@@ -1,0 +1,42 @@
+<div class = 'mainLink'>
+  <a routerLink='/mainpage'>Main Page</a>
+</div>
+
+<div class='currInfo'>
+  <h2>Here is your current infomation!</h2>
+  <div class='headshot'>
+    <img src={{headshot}} />
+    <div><input type='file'></div>
+  </div>
+  <table class='currTbl'>
+    <tr><td class='badge'>User Name</td> <td>{{user?.userName}}</td></tr>
+    <tr><td class='badge'>Display Name</td> <td>{{user?.displayName}}</td></tr>
+    <tr><td class='badge'>Email</td> <td>{{user?.email}}</td></tr>
+    <tr><td class='badge'>Birthday</td> <td>{{user?.birthDate}}</td></tr>
+    <tr><td class='badge'>Zipcode</td> <td>{{user?.zipcode}}</td></tr>
+    <tr><td class='badge'>Phone Number</td> <td>{{user?.phoneNum}}</td></tr>
+  </table>
+</div>
+
+<div class='updaInfo'>
+  <h2>Change your information here!</h2>
+
+  <form class='updaForm' [formGroup]='updaForm'>
+    <table class='updaTbl'>
+      <tr><td class='badge'>User Name</td> <td><input formControlName='userName' /></td></tr>
+      <tr><td class='badge'>Display Name</td> <td><input formControlName='displayName' /></td></tr>
+      <tr><td class='badge'>Email</td> <td><input formControlName='email' /></td></tr>
+      <tr><td class='badge'>Phone Number</td> <td><input formControlName='phoneNum' /></td></tr>
+      <tr><td class='badge'>Zipcode</td> <td><input formControlName='zipcode' /></td></tr>
+      <tr><td class='badge'>Password</td> <td><input formControlName='password' type='password' /></td></tr>
+      <tr><button (click)='update()'>Update!</button></tr>
+    </table>
+  </form>
+  <div class='updaWarn'>
+    <ul>
+      <li *ngFor='let msg of warnMsg'>
+        {{msg}}
+      </li>
+    </ul>
+  </div>
+</div>

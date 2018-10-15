@@ -1,0 +1,50 @@
+.mainLink {
+  background: rgba(135,206,250,1);
+  top : 0px;
+  position: absolute;
+  width: 100%;
+}
+
+a {
+  margin-left: 5em;
+  font-size: 20px;
+}
+
+table, td {
+  text-align: center;
+  border: 1px solid;
+}
+
+td {
+  font-size: 20px;
+}
+
+.currInfo {
+  position: absolute;
+  left: 200px;
+}
+
+.currInfo table {
+  margin-left: 4em;
+  margin-top: 2em;
+}
+
+.updaInfo table {
+  margin-left: 4em;
+  margin-top: 2em;
+}
+
+.updaInfo {
+  position: absolute;
+  left: 800px;
+}
+
+img {
+  width: 400px;
+  height: 400px;
+}
+
+.updaWarn {
+  margin-right: 6em;
+  font-size: 20px;
+}

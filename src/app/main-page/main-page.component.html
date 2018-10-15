@@ -1,0 +1,97 @@
+<div class='logLink'>
+
+  <a routerLink='/profile'>Profile</a>
+  <a routerLink='/login' >Log Out</a>
+</div>
+
+<div class='mainFolo'>
+
+  <div class='userFolo'>
+
+    <div class='userInfo'>
+      <div>
+        <img src='{{headshot}}' />
+      </div>
+      <p class='userName'>
+        {{user?.displayName}}
+      </p>
+      <p class='userStatus'>
+        {{userStatus}}
+      </p>
+      <input [(ngModel)]='newStatus' placeholder="How is it going today?" /><br />
+      <button (click)='updateStatus()'>Update!</button>
+    </div>
+  </div>
+
+  <div class='followers'>
+    <div *ngFor='let fo of sfollowers; let i = index'>
+      <div>
+        <img src='{{fo.img}}' />
+      </div>
+      <p class='floName'>
+        {{fo?.name}}
+      </p>
+      <p class='floStatus'>
+        {{fo?.status}}
+      </p>
+      <div>
+        <button (click)='remove(i)'>Remove</button>
+      </div>
+    </div>
+    <div class='addFlo'>
+      <input [(ngModel)]='addName' class='addName'/>
+      <button class='addFloBtn' (click)='addFlo()'>Add</button>
+    </div>
+  </div>
+
+</div>
+
+
+<div class='postTest'>
+  <input type='file' class='inputImg' />
+  <input type='text' [(ngModel)]='inputTxt' class='inputTxt' placeholder="please post here!"/><br />
+  <button (click)='clearTxt()' class='clearBtn'>Cancel</button>
+  <button class='postBtn' (click)='newPost()'>Post</button>
+  <input type="checkbox" [(ngModel)]='textonly' />Text Only
+</div>
+
+
+<div class='searchArea'>
+  <input [(ngModel)]='searchKey' placeholder="Search for posts here!" />
+</div>
+
+
+<div class='postArea'>
+
+  <div class='post'>
+    <table class='postTbl'>
+
+      <div *ngFor='let post of sposts|search:searchKey; let i = index'>
+        <tr>
+          <td>
+            {{post?.author}}
+          </td>
+          <td>
+            <p>
+              {{post?.content}}
+            </p>
+          </td>
+          <td *ngIf="post.img!=''">
+            <img src='{{post.img}}' />
+          </td>
+        </tr>
+        <div class='comments' *ngIf='!comments[i]'>
+            Some comments<br />Some other comments
+        </div>
+
+       <div class='buttons'>
+         <button>Comment</button>
+         <button>Edit</button>
+         <button (click)='hideAndShow(i)'>Hide/Show Comments</button>
+       </div>
+
+      </div>
+
+    </table>
+  </div>
+</div>

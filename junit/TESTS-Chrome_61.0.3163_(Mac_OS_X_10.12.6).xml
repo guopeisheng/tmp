@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome 61.0.3163 (Mac OS X 10.12.6)" package="" timestamp="2017-10-30T03:29:03" id="0" hostname="Zhenyus-MacBook-Pro.local" tests="18" errors="0" failures="0" time="0.25">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"/>
+  </properties>
+  <testcase name="AppComponent should create the app" time="0.07" classname="Chrome_61_0_3163_(Mac_OS_X_10_12_6).AppComponent"/>
+  <testcase name="AppComponent should have as title 'app'" time="0.02" classname="Chrome_61_0_3163_(Mac_OS_X_10_12_6).AppComponent"/>
+  <testcase name="DataService should fetch articles" time="0.132" classname="Chrome_61_0_3163_(Mac_OS_X_10_12_6).DataService"/>
+  <testcase name="DataService should update the search keyword" time="0.002" classname="Chrome_61_0_3163_(Mac_OS_X_10_12_6).DataService"/>
+  <testcase name="DataService should render articles" time="0.002" classname="Chrome_61_0_3163_(Mac_OS_X_10_12_6).DataService"/>
+  <testcase name="DataService should dispatch actions to create a new article" time="0.001" classname="Chrome_61_0_3163_(Mac_OS_X_10_12_6).DataService"/>
+  <testcase name="profile actions resource should be a resource" time="0.003" classname="Chrome_61_0_3163_(Mac_OS_X_10_12_6).profile actions"/>
+  <testcase name="profile actions resource should give me the http error" time="0.001" classname="Chrome_61_0_3163_(Mac_OS_X_10_12_6).profile actions"/>
+  <testcase name="profile actions resource should be POSTable" time="0.001" classname="Chrome_61_0_3163_(Mac_OS_X_10_12_6).profile actions"/>
+  <testcase name="profile actions should update error message" time="0.001" classname="Chrome_61_0_3163_(Mac_OS_X_10_12_6).profile actions"/>
+  <testcase name="profile actions should update success message" time="0.001" classname="Chrome_61_0_3163_(Mac_OS_X_10_12_6).profile actions"/>
+  <testcase name="profile actions should navigate" time="0.006" classname="Chrome_61_0_3163_(Mac_OS_X_10_12_6).profile actions"/>
+  <testcase name="SearchPipe should filter displayed articles by the search keyword" time="0.003" classname="Chrome_61_0_3163_(Mac_OS_X_10_12_6).SearchPipe"/>
+  <testcase name="ValidateService should log in a user" time="0.002" classname="Chrome_61_0_3163_(Mac_OS_X_10_12_6).ValidateService"/>
+  <testcase name="ValidateService should not log in an invalid user" time="0.002" classname="Chrome_61_0_3163_(Mac_OS_X_10_12_6).ValidateService"/>
+  <testcase name="ValidateService should log out a user" time="0.001" classname="Chrome_61_0_3163_(Mac_OS_X_10_12_6).ValidateService"/>
+  <testcase name="ValidateService should fetch the user's profile information" time="0.001" classname="Chrome_61_0_3163_(Mac_OS_X_10_12_6).ValidateService"/>
+  <testcase name="ValidateService should update headline" time="0.001" classname="Chrome_61_0_3163_(Mac_OS_X_10_12_6).ValidateService"/>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

@@ -1,0 +1,8 @@
+{
+  "followers": [
+    {"id": 0, "name": "zh20", "status": "Im an artist.", "img": "/assets/2.jpg"},
+    {"id": 1, "name": "wl49", "status": "Boy next door.", "img": "/assets/3.jpeg"},
+    {"id": 2, "name": "qz25", "status": "Oh My Shouder!", "img": "/assets/4.jpg"},
+    {"id": 3, "name": "zl52", "status": "Take it boy!", "img": "/assets/5.jpg"}
+  ]
+}

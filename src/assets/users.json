@@ -1,0 +1,40 @@
+{
+  "users":[
+    {
+      "userName": "zh20",
+      "displayName": "zh20",
+      "password": "three-word-passphrase",
+      "email": "zh20@rice.edu",
+      "birthDate": "1995-07-20",
+      "zipcode": "77030",
+      "phoneNum": "832-607-0726"
+    },
+    {
+      "userName": "wl49",
+      "displayName": "wl49",
+      "password": "three-word-passphrase",
+      "email": "wl49@rice.edu",
+      "birthDate": "1996-03-16",
+      "zipcode": "77030",
+      "phoneNum": "832-607-0237"
+    },
+    {
+      "userName": "qz25",
+      "displayName": "qz25",
+      "password": "three-word-passphrase",
+      "email": "qz25@rice.edu",
+      "birthDate": "1994-05-23",
+      "zipcode": "77030",
+      "phoneNum": "832-607-1243"
+    },
+    {
+      "userName": "zl52",
+      "displayName": "zl52",
+      "password": "three-word-passphrase",
+      "email": "zl52@rice.edu",
+      "birthDate": "1995-03-12",
+      "zipcode": "77030",
+      "phoneNum": "832-607-2721"
+    }
+  ]
+}

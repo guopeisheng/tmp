@@ -1,0 +1,35 @@
+.title {
+  margin-top: 3em;
+  font-style: italic;
+  font-size: 30px;
+  text-align: center;
+}
+
+.logForm {
+  position: absolute;
+  left: 30%;
+  width: 18%;
+  top: 16em;
+  font-size: 20px;
+}
+
+a {
+  position: relative;
+  left: 25em;
+  font-size: 20px;
+  top: 5em;
+}
+
+.logTbl {
+  width: 200%;
+  margin: 20px;
+  background: rgba(135,206,250,1);
+}
+
+table {
+  border: 1px solid;
+}
+
+button {
+  margin-left: 230px;
+}

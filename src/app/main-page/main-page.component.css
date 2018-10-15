@@ -1,0 +1,92 @@
+div {
+  border: 1px solid;
+  text-align: center;
+  align-items: center;
+}
+
+.mainFolo img {
+  width: 150px;
+  height: 150px;
+}
+
+.userInfo img {
+  width: 300px;
+  height: 300px;
+}
+
+.logLink {
+  position: absolute;
+  top: 0px;
+  background: rgba(135,206,250,1);
+  width: 100%;
+  text-align: center;
+}
+
+a {
+  position: relative;
+  right: 25em;
+  font-size: 20px;
+  margin-right: 3em;
+}
+
+.userFolo {
+  position: absolute;
+  top: 100px;
+  left: 30px;
+}
+
+.followers {
+  position: absolute;
+  top: 570px;
+  left: 100px
+}
+
+.searchArea {
+  position: absolute;
+  top: 400px;
+  left: 600px;
+}
+
+.postArea {
+  text-align: center;
+  position: absolute;
+  left: 450px;
+  top: 440px;
+}
+
+.postArea img {
+  width: 250px;
+  height: 250px;
+}
+
+.postTbl p {
+  width: 500px;
+}
+
+.buttons {
+  position: relative;
+  left: 20em;
+  width: 10em;
+}
+
+.postTest {
+  position: absolute;
+  top: 100px;
+  left: 700px;
+  background: rgba(135,206,250,0.5);
+}
+
+.inputImg {
+
+}
+
+.inputTxt {
+  width: 200px;
+  height: 200px;
+}
+
+.comments {
+  position: relative;
+  left: 197.5%;
+  text-align: center;
+}
