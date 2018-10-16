@@ -1,4 +1,4 @@
-.title {
+/* .title {
   margin-top: 3em;
   font-style: italic;
   font-size: 30px;
@@ -32,4 +32,48 @@ table {
 
 button {
   margin-left: 230px;
+} */
+
+.title {
+  margin-top: 3em;
+  font-style: italic;
+  font-size: 30px;
+  text-align: center;
+}
+
+.logForm{
+  width: 30%; 
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin:0 auto;
+}
+
+.logTbl {
+  width: 80%;
+  margin: 20px;
+  background: #FAEBD7;
+}
+
+table {
+  border: 1px solid;
+}
+
+button {
+  margin-left: 230px;
+}
+
+.regLink{
+  width: 30%; 
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin:0 auto;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 0;
 }
