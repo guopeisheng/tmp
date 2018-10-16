@@ -37,41 +37,41 @@ export class ProfileComponent implements OnInit {
     let zipcode = this.updaForm.get('zipcode').value;
     let password = this.updaForm.get('password').value;
 
-    if ( userName ) {
-      if ( this.validateService.userName(userName) ) {
+    if (userName) {
+      if (this.validateService.userName(userName)) {
         this.user.userName = userName;
         this.dataService.user.userName = userName;
       }
     }
 
-    if ( displayName ) {
+    if (displayName) {
       this.user.displayName = displayName;
       this.dataService.user.displayName = displayName;
 
     }
 
-    if ( email ) {
-      if ( this.validateService.email(email) ) {
+    if (email) {
+      if (this.validateService.email(email)) {
         this.user.email = email;
         this.dataService.user.email = email;
       }
     }
 
-    if ( phoneNum ) {
-      if ( this.validateService.phoneNum(phoneNum) ) {
+    if (phoneNum) {
+      if (this.validateService.phoneNum(phoneNum)) {
         this.user.phoneNum = phoneNum;
         this.dataService.user.phoneNum = phoneNum;
       }
     }
 
-    if ( zipcode ) {
-      if ( this.validateService.zipcode(zipcode) ) {
+    if (zipcode) {
+      if (this.validateService.zipcode(zipcode)) {
         this.user.zipcode = zipcode;
         this.dataService.user.zipcode = zipcode;
       }
     }
 
-    if ( password ) {
+    if (password) {
       this.user.password = password;
       this.dataService.user.password = password;
     }
@@ -85,7 +85,7 @@ export class ProfileComponent implements OnInit {
     private router: Router,
     private dataService: DataService,
     private validateService: ValidateService
-  ) {this.user = new User('zh20','three-word-passphrase') }
+  ) { this.user = new User('pg23', 'key') }
 
   ngOnInit() {
     this.user = this.dataService.getUser();

@@ -8,7 +8,7 @@ import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import fetch, { mock } from 'mock-fetch'
 
-import { url, login,resource } from '../profileActions'
+import { url, login, resource } from '../profileActions'
 
 describe('LoginComponent', () => {
   let component: LoginComponent;
@@ -30,7 +30,7 @@ describe('LoginComponent', () => {
         DataService
       ]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

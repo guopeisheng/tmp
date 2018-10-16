@@ -7,11 +7,11 @@ import { url, login, resource } from './profileActions';
 describe('profile actions', () => {
 
   it('resource should be a resource', (done) => {
-    const username = 'zh20'
+    const username = 'pg23'
     mock(`${url}/login`, {
         method: 'GET',
         headers: {'Content-Type': 'application/json'}})
-    login('zh20')
+    login('pg23')
     .then(r => {
       return r.body
     })
@@ -24,7 +24,7 @@ describe('profile actions', () => {
   })
 
   it('resource should give me the http error', (done)=> {
-    login('zh20')
+    login('pg23')
     .catch(err => expect(err).not.toEqual(null))
     .then(done)
   })
@@ -34,16 +34,16 @@ describe('profile actions', () => {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         json: {
-          userName: 'zh20',
-          password: 'three-word-passphrase'
+          userName: 'pg23',
+          password: 'key'
         }
     })
-    login('zh20')
+    login('pg23')
     .then(r => {
       return JSON.parse(r.body)
     })
     .then( b => {
-      expect(b.username).toEqual('zh20')
+      expect(b.username).toEqual('pg23')
     })
     .then(done)
     .catch(done)
@@ -55,7 +55,7 @@ describe('profile actions', () => {
         headers: {'Content-Type': 'application/json'},
         json: {
           userName: 'wrongUser',
-          password: 'three-word-passphrase'
+          password: 'key'
         }
     })
     login('wrongUser')
@@ -71,13 +71,13 @@ describe('profile actions', () => {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         json: {
-          userName: 'zh20',
-          password: 'three-word-passphrase'
+          userName: 'pg23',
+          password: 'key'
         }
     })
-    login('zh20')
+    login('pg23')
     .then(r => {
-      expect(r.msg).toEqual('You logged in as zh20!')
+      expect(r.msg).toEqual('You logged in as pg23!')
     })
     .then(done)
     .catch(done)
@@ -88,11 +88,11 @@ describe('profile actions', () => {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         json: {
-          userName: 'zh20',
-          password: 'three-word-passphrase'
+          userName: 'pg23',
+          password: 'key'
         }
     })
-    login('zh20')
+    login('pg23')
     .then(r => {
       expect(r.url).toEqual('mainpage')
     })

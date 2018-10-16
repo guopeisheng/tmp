@@ -42,7 +42,7 @@ export class LoginComponent implements OnInit {
   login(): void {
     let logUser = this.loginForm.get('userName').value
     let matchUser = this.registeredUsers.find(user => user.userName == logUser)
-    if ( matchUser && this.loginForm.get('password').value.match(/^.+-.+-.+$/) ) {
+    if (matchUser && this.loginForm.get('password').value.match(/^.+-.+-.+$/)) {
       this.dataService.user = matchUser;
       this.user = matchUser;
       //use localStorage to store log in status
@@ -59,14 +59,14 @@ export class LoginComponent implements OnInit {
     private router: Router,
     private dataService: DataService,
     private http: Http
-  ) {this.user = new User('zh20','three-word-passphrase') }
+  ) { this.user = new User('pg23', 'key') }
 
   ngOnInit() {
 
     localStorage.clear();
     this.msg = ''
     this.http.get('assets/users.json').map(res => res.json())
-    .subscribe(u => this.registeredUsers = u.users)
+      .subscribe(u => this.registeredUsers = u.users)
   }
 
 }

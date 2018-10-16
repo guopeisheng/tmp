@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome 69.0.3497 (Windows 10 0.0.0)" package="" timestamp="2018-10-15T20:02:19" id="0" hostname="LAPTOPGPS" tests="17" errors="0" failures="0" time="0.235">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"/>
+  </properties>
+  <testcase name="AppComponent should create the app" time="0.057" classname="Chrome_69_0_3497_(Windows_10_0_0_0).AppComponent"/>
+  <testcase name="DataService should fetch articles" time="0.131" classname="Chrome_69_0_3497_(Windows_10_0_0_0).DataService"/>
+  <testcase name="DataService should update the search keyword" time="0.002" classname="Chrome_69_0_3497_(Windows_10_0_0_0).DataService"/>
+  <testcase name="DataService should render articles" time="0.004" classname="Chrome_69_0_3497_(Windows_10_0_0_0).DataService"/>
+  <testcase name="DataService should dispatch actions to create a new article" time="0.008" classname="Chrome_69_0_3497_(Windows_10_0_0_0).DataService"/>
+  <testcase name="profile actions resource should be a resource" time="0.005" classname="Chrome_69_0_3497_(Windows_10_0_0_0).profile actions"/>
+  <testcase name="profile actions resource should give me the http error" time="0.002" classname="Chrome_69_0_3497_(Windows_10_0_0_0).profile actions"/>
+  <testcase name="profile actions resource should be POSTable" time="0.003" classname="Chrome_69_0_3497_(Windows_10_0_0_0).profile actions"/>
+  <testcase name="profile actions should update error message" time="0.005" classname="Chrome_69_0_3497_(Windows_10_0_0_0).profile actions"/>
+  <testcase name="profile actions should update success message" time="0.004" classname="Chrome_69_0_3497_(Windows_10_0_0_0).profile actions"/>
+  <testcase name="profile actions should navigate" time="0.002" classname="Chrome_69_0_3497_(Windows_10_0_0_0).profile actions"/>
+  <testcase name="SearchPipe should filter displayed articles by the search keyword" time="0.003" classname="Chrome_69_0_3497_(Windows_10_0_0_0).SearchPipe"/>
+  <testcase name="ValidateService should log in a user" time="0.002" classname="Chrome_69_0_3497_(Windows_10_0_0_0).ValidateService"/>
+  <testcase name="ValidateService should not log in an invalid user" time="0.003" classname="Chrome_69_0_3497_(Windows_10_0_0_0).ValidateService"/>
+  <testcase name="ValidateService should log out a user" time="0.002" classname="Chrome_69_0_3497_(Windows_10_0_0_0).ValidateService"/>
+  <testcase name="ValidateService should fetch the user's profile information" time="0.001" classname="Chrome_69_0_3497_(Windows_10_0_0_0).ValidateService"/>
+  <testcase name="ValidateService should update headline" time="0.001" classname="Chrome_69_0_3497_(Windows_10_0_0_0).ValidateService"/>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

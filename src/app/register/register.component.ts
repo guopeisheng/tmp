@@ -43,28 +43,28 @@ export class RegisterComponent implements OnInit {
     this.validateService.phoneNum(this.registerForm.get('phoneNum').value);
 
     this.validateService.password(this.registerForm.get('password').value,
-  this.registerForm.get('passwordConf').value);
+      this.registerForm.get('passwordConf').value);
 
 
     this.dataStatus = this.validateService.status;
     this.messages = this.validateService.warnMessage;
 
     //use localStorage to store log in status
-     if (this.dataStatus) {
-    //   this.dataService.loadUser(
-    //     this.registerForm.get('userName').value,
-    //     this.registerForm.get('password').value,
-    //     this.registerForm.get('displayName').value,
-    //     this.registerForm.get('email').value,
-    //     this.registerForm.get('birthDate').value,
-    //     this.registerForm.get('zipcode').value,
-    //     this.registerForm.get('phoneNum').value
-    //   );
-    //   localStorage.user = JSON.stringify(
-    //     this.dataService.getUser()
-    //   );
-       this.router.navigate(['/login']);
-     }
+    if (this.dataStatus) {
+      //   this.dataService.loadUser(
+      //     this.registerForm.get('userName').value,
+      //     this.registerForm.get('password').value,
+      //     this.registerForm.get('displayName').value,
+      //     this.registerForm.get('email').value,
+      //     this.registerForm.get('birthDate').value,
+      //     this.registerForm.get('zipcode').value,
+      //     this.registerForm.get('phoneNum').value
+      //   );
+      //   localStorage.user = JSON.stringify(
+      //     this.dataService.getUser()
+      //   );
+      this.router.navigate(['/login']);
+    }
 
   }
 

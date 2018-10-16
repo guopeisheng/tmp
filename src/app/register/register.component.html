@@ -2,23 +2,42 @@
 <form [formGroup]="registerForm" class='regForm'>
   <table class='regTbl'>
     <tr>
-      <td class="badge">User Name:</td><td><input formControlName='userName' required /></td>
-    </tr><tr>
-      <td class="badge">Display Name:</td><td><input formControlName='displayName' required /></td>
-    </tr><tr>
-      <td class="badge">Email:</td><td><input formControlName='email' required /></td>
-    </tr><tr>
-      <td class="badge">Birthday:</td><td><input formControlName='birthDate' type="date" required /></td>
-    </tr><tr>
-      <td class="badge">Zipcode:</td><td><input formControlName='zipcode' placeholder="12345" required /></td>
-    </tr><tr>
-      <td class="badge">Phone Number:</td><td><input formControlName='phoneNum' placeholder="123-123-1234" required /></td>
-    </tr><tr>
-      <td class="badge">Password:</td><td><input formControlName='password' type="password" required /></td>
-    </tr><tr>
-      <td class="badge">Password Confirm:</td><td><input formControlName='passwordConf' type="password" required /></td>
-    </tr><tr>
-      <td class="btn"><button type="reset">Clear</button></td><td class="btn"><button (click)='validate()' type="submit">Submit</button></td>
+      <td class="badge">User Name:</td>
+      <td><input formControlName='userName' required /></td>
+    </tr>
+    <tr>
+      <td class="badge">Display Name:</td>
+      <td><input formControlName='displayName' required /></td>
+    </tr>
+    <tr>
+      <td class="badge">Email:</td>
+      <td><input formControlName='email' required /></td>
+    </tr>
+    <tr>
+      <td class="badge">Birthday:</td>
+      <td><input formControlName='birthDate' type="date" required /></td>
+    </tr>
+    <tr>
+      <td class="badge">Zipcode:</td>
+      <td><input formControlName='zipcode' placeholder="12345" required /></td>
+    </tr>
+    <tr>
+      <td class="badge">Phone Number:</td>
+      <td><input formControlName='phoneNum' placeholder="123-123-1234" required /></td>
+    </tr>
+    <tr>
+      <td class="badge">Password:</td>
+      <td><input formControlName='password' type="password" required /></td>
+    </tr>
+    <tr>
+      <td class="badge">Password Confirm:</td>
+      <td><input formControlName='passwordConf' type="password" required /></td>
+    </tr>
+    <tr>
+      <td class="btn"><button type="reset">Clear</button></td>
+      <td class="btn"><button (click)='validate()' type="submit">Submit
+
+        </button></td>
     </tr>
   </table>
 </form>
